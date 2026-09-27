@@ -1,0 +1,20 @@
+# Секреты и окружение (перестраховка поверх backend/.gitignore)
+**/.env
+**/.env.*
+!**/.env.example
+
+# Базы данных и загрузки dev-стенда
+*.db
+*.sqlite
+*.sqlite3
+**/uploads/
+
+# Логи
+*.log
+
+# ОС / редакторы
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.iml

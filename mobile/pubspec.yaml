@@ -1,0 +1,27 @@
+name: yolguard
+description: Yo'lGuard AI — ассистент разбора мелких ДТП (Европротокол, Узбекистан). Мобильный клиент.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=3.4.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  http: ^1.2.2                 # HTTP-клиент к бэкенду FastAPI
+  provider: ^6.1.2             # состояние (авторизация, текущий пользователь)
+  shared_preferences: ^2.3.2   # хранение JWT-токена
+  image_picker: ^1.1.2         # съёмка/выбор фото доказательств
+  geolocator: ^13.0.1          # GPS для привязки доказательств (принцип целостности из ТЗ)
+  qr_flutter: ^4.1.0           # генерация QR с кодом присоединения (сторона A)
+  mobile_scanner: ^5.2.3       # сканирование QR (сторона B)
+  intl: ^0.19.0                # форматирование дат
+  google_fonts: ^8.2.1         # премиальная типографика (Onest + JetBrains Mono, с кириллицей)
+
+dev_dependencies:
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true

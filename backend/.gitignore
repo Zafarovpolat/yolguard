@@ -1,0 +1,16 @@
+# Python / uv
+.venv/
+__pycache__/
+*.pyc
+
+# dev database & uploads
+*.db
+uploads/
+
+# logs
+*.log
+
+# secrets
+.env
+.env.*
+!.env.example
